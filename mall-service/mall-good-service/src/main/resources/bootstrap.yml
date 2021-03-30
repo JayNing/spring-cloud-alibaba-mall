@@ -1,0 +1,41 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: mall-goods
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shop_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+  cloud:
+    nacos:
+     config:
+       file-extension: yaml
+       server-addr: 192.168.171.123:8848
+     discovery:
+       #Nacos的注册地址
+       server-addr: 192.168.171.123:8848
+
+# ====================MybatisPlus====================
+mybatis-plus:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.ning.mall.*.model
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#日志配置
+logging:
+  pattern:
+    console: "%msg%n"
+
+# ====================swagger====================
+swagger:
+  base-path: /**
+  base-package: 'com.ning.mall'
+  title: 'spring-boot-swagger'
+  description: '基于Swagger构建的SpringBoot RESTApi 文档'
+  version: '1.0'
+  contact:
+    name: 'JayNing'

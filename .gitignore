@@ -1,0 +1,5 @@
+# Project exclude paths
+/mall-api/goods-api/target/
+/mall-service/mall-good-service/target/
+/mall-util/mall-common/target/
+/mall-util/mall-service-dependency/target/
