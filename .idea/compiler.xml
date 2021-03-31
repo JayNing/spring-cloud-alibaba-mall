@@ -9,6 +9,7 @@
         <module name="goods-api" />
         <module name="mall-good-service" />
         <module name="mall-service-dependency" />
+        <module name="mall-file-service" />
         <module name="mall-common" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="goods-api" options="-parameters" />
       <module name="mall-common" options="-parameters" />
+      <module name="mall-file-service" options="-parameters" />
       <module name="mall-gateway" options="-parameters" />
       <module name="mall-good-service" options="-parameters" />
       <module name="mall-service" options="-parameters" />

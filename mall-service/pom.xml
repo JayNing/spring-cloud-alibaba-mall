@@ -15,6 +15,7 @@
     <description>所有的应用服务</description>
     <modules>
         <module>mall-good-service</module>
+        <module>mall-file-service</module>
     </modules>
 
     <dependencies>
